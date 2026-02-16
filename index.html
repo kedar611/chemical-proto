@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chemical Prototype</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>🧪 CHEMICAL PROTOTYPE</h1>
+<p>Liquid Soap Manufacturing System</p>
+</header>
+
+<nav>
+<button onclick="openTab('home')">Home</button>
+<button onclick="openTab('ingredients')">Ingredients</button>
+<button onclick="openTab('procedure')">Procedure</button>
+<button onclick="openTab('diagrams')">Diagrams</button>
+<button onclick="openTab('gallery')">Gallery</button>
+<button onclick="openTab('analysis')">Analysis</button>
+<button onclick="openTab('team')">Team</button>
+</nav>
+
+<div class="tab" id="home">
+<h2>Liquid Soap Prototype</h2>
+<p>This system demonstrates the formulation and chemical processing of liquid soap using surfactants, stabilizers, and thickeners.</p>
+<img src="images/soap.jpg">
+</div>
+
+<div class="tab" id="ingredients">
+<h2>Chemicals Used</h2>
+<div class="card">SLES – Primary Surfactant</div>
+<div class="card">CAPB – Foam Booster</div>
+<div class="card">Glycerin – Skin Conditioner</div>
+<div class="card">Salt – Thickener</div>
+<div class="card">Fragrance & Color</div>
+<div class="card">Preservatives</div>
+</div>
+
+<div class="tab" id="procedure">
+<h2>Manufacturing Steps</h2>
+<ol>
+<li>Add purified water to tank</li>
+<li>Add SLES slowly</li>
+<li>Add CAPB and stir</li>
+<li>Add glycerin</li>
+<li>Add salt for thickness</li>
+<li>Add color & fragrance</li>
+<li>Mix and package</li>
+</ol>
+</div>
+
+<div class="tab" id="diagrams">
+<h2>System Diagrams</h2>
+
+<h3>Block Diagram</h3>
+<img src="images/block.png">
+
+<h3>Process Flow Diagram</h3>
+<img src="images/process.png">
+</div>
+
+<div class="tab" id="gallery">
+<h2>Project Gallery</h2>
+<img src="images/soap.jpg">
+<video controls>
+<source src="images/soap1.mp4" type="video/mp4">
+</video>
+</div>
+
+<div class="tab" id="analysis">
+<h2>System Analysis</h2>
+
+<h3>Advantages</h3>
+<ul>
+<li>Low cost production</li>
+<li>Eco-friendly surfactants</li>
+<li>Skin safe formulation</li>
+<li>Easy to scale</li>
+<li>High cleaning power</li>
+<li>Foam control possible</li>
+</ul>
+
+<h3>Disadvantages</h3>
+<ul>
+<li>Chemical handling required</li>
+<li>Preservatives needed</li>
+<li>Raw material price varies</li>
+<li>pH control required</li>
+<li>Not fully organic</li>
+</ul>
+</div>
+
+<div class="tab" id="team">
+<h2>Our Project Team</h2>
+
+<img src="images/team.jpg" alt="Team Photo">
+
+<div class="team-box">
+  <h3>Kedar Jasud</h3>
+  <p>Project Lead & Chemical Engineer</p>
+</div>
+
+<div class="team-box">
+  <h3>Member 2</h3>
+  <p>Formulation Specialist</p>
+</div>
+
+<div class="team-box">
+  <h3>Member 3</h3>
+  <p>Quality & Testing</p>
+</div>
+
+</div>
+
+
+<img src="images/team.jpg">
+
+<div class="card">
+<h3>Kedar Jasud</h3>
+<p>Chemical Engineer</p>
+</div>
+
+<div class="card">
+<h3>Anushka Kannawar</h3>
+<p>Chemical Engineer</p>
+</div>
+
+</div>
+
+<script>
+function openTab(tabName){
+var tabs = document.getElementsByClassName("tab");
+for(let i=0;i<tabs.length;i++){
+tabs[i].style.display="none";
+}
+document.getElementById(tabName).style.display="block";
+}
+openTab("home");
+</script>
+
+</body>
+</html>
